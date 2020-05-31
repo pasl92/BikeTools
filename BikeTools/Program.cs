@@ -4,6 +4,16 @@ namespace BikeTools
 {
     class Program
     {
+        static void KalkulatorSzprych()
+        {
+
+        }
+
+        static void KalkulatorRam()
+        {
+
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("WSEI 2020/2021\n");
@@ -14,6 +24,7 @@ namespace BikeTools
             Console.WriteLine("2. Kalkulator długości szprych");
             Console.WriteLine("3. INFO");
             Console.WriteLine("\n0. KONIEC");
+
 
         }
     }
