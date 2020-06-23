@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BikeTools",
+    "\\BikeToolsLib"
   ],
+  "SelectedNode": "\\BikeTools\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

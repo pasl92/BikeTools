@@ -18,7 +18,7 @@ namespace BikeToolsLib
             {
                 string h = Console.ReadLine();
 
-                if ((h == "0") || (h == "1") || (h == "2"))
+                if ((h == "0") || (h == "1") || (h == "2") || (h == "3"))
                 {
 
                     switch (h)
@@ -30,6 +30,10 @@ namespace BikeToolsLib
 
                         case "2":
                             KalkulatorSzprych.KalSzprych();
+                            break;
+
+                        case "3":
+                            BikeToolsInfo.Info();
                             break;
 
                         case "0":
