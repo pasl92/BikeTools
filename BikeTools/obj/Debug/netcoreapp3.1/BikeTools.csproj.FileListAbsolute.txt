@@ -11,3 +11,6 @@ C:\Users\PC\source\repos\BikeTools\BikeTools\obj\Debug\netcoreapp3.1\BikeTools.A
 C:\Users\PC\source\repos\BikeTools\BikeTools\obj\Debug\netcoreapp3.1\BikeTools.dll
 C:\Users\PC\source\repos\BikeTools\BikeTools\obj\Debug\netcoreapp3.1\BikeTools.pdb
 C:\Users\PC\source\repos\BikeTools\BikeTools\obj\Debug\netcoreapp3.1\BikeTools.genruntimeconfig.cache
+C:\Users\PC\source\repos\BikeTools\BikeTools\bin\Debug\netcoreapp3.1\BikeToolsLib.dll
+C:\Users\PC\source\repos\BikeTools\BikeTools\bin\Debug\netcoreapp3.1\BikeToolsLib.pdb
+C:\Users\PC\source\repos\BikeTools\BikeTools\obj\Debug\netcoreapp3.1\BikeTools.csproj.CopyComplete

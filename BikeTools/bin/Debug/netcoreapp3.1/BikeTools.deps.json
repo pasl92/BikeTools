@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "BikeTools/1.0.0": {
+        "dependencies": {
+          "BikeToolsLib": "1.0.0"
+        },
         "runtime": {
           "BikeTools.dll": {}
+        }
+      },
+      "BikeToolsLib/1.0.0": {
+        "runtime": {
+          "BikeToolsLib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "BikeTools/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BikeToolsLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
