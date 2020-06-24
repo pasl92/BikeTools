@@ -8,10 +8,10 @@ namespace BikeToolsLib
     {
         public static void Menu()
         {
-            Console.WriteLine("1. Kalkulator rozmiaru ramy");
+            Console.WriteLine("\n1. Kalkulator rozmiaru ramy");
             Console.WriteLine("2. Kalkulator czasu jazdy Ebike");
             Console.WriteLine("3. INFO");
-            Console.WriteLine("\n0. KONIEC");
+            Console.WriteLine("\n0. KONIEC\n");
 
 
             while (1 != 0)
@@ -37,6 +37,7 @@ namespace BikeToolsLib
                             break;
 
                         case "0":
+                            Console.WriteLine("\nZamykanie...");
                             System.Environment.Exit(1);
                             break;
                     }

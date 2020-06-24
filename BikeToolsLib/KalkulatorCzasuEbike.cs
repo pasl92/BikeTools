@@ -57,8 +57,10 @@ namespace BikeToolsLib
 
             j = (((x * z) / k) * 60) * o;
 
-
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut\n");
+            Console.ResetColor();
+
 
             BikeToolsMenu.Menu();
 

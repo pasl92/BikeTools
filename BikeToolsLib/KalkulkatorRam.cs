@@ -12,10 +12,10 @@ namespace BikeToolsLib
             string[] frameSizeR = { "47-49 cm", "49-51 cm", "51- 53 cm", "53-55 cm", "55-57 cm", "57-60 cm", "60- 62 cm", "62-64 cm", "od 64 cm" };
 
 
-            Console.WriteLine("Podaj wzrost: ");
+            Console.WriteLine("\nPodaj wzrost: ");
             wzrost = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Wybierz rodzaj roweru: \n");
+            Console.WriteLine("\nWybierz rodzaj roweru: \n");
             Console.WriteLine("1 - Rower MTB");
             Console.WriteLine("2 - Rower szosowy\n");
 
@@ -24,6 +24,8 @@ namespace BikeToolsLib
             {
 
                 string b = Console.ReadLine();
+
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
 
                 if (b == "1")
                 {
@@ -38,7 +40,7 @@ namespace BikeToolsLib
                             if (wzrost <= j)
                             {
                                 Console.WriteLine("\nOdpowiedni rozmiar ramy MTB to " + frameSizeM[n]);
-
+                                Console.ResetColor();
                                 n = 10;
                             }
 
@@ -51,7 +53,8 @@ namespace BikeToolsLib
 
                     else
                     {
-                        Console.WriteLine("Aby dobrać odpowiedni rozmiar dla twojego wzrostu, polecamy udać się na konsultacje w sklepie rowerowym.");
+                        Console.WriteLine("\nAby dobrać odpowiedni rozmiar dla twojego wzrostu, polecamy udać się na konsultacje w sklepie rowerowym.");
+                        Console.ResetColor();
                     }
 
                     Console.WriteLine("\n0 - KONIEC");
@@ -72,7 +75,7 @@ namespace BikeToolsLib
                             if (wzrost <= j)
                             {
                                 Console.WriteLine("\nOdpowiedni rozmiar ramy szosowej to " + frameSizeR[n]);
-
+                                Console.ResetColor();
                                 n = 10;
                             }
 
@@ -85,7 +88,8 @@ namespace BikeToolsLib
 
                     else
                     {
-                        Console.WriteLine("Aby dobrać odpowiedni rozmiar dla twojego wzrostu, polecamy udać się na konsultacje w sklepie rowerowym.");
+                        Console.WriteLine("\nAby dobrać odpowiedni rozmiar dla twojego wzrostu, polecamy udać się na konsultacje w sklepie rowerowym.");
+                        Console.ResetColor();
                     }
 
                     Console.WriteLine("\n0 - KONIEC");
@@ -95,7 +99,7 @@ namespace BikeToolsLib
                 else if (b == "3")
 
                 {
-
+                    Console.ResetColor();
                     BikeToolsMenu.Menu();
                     
                 }
