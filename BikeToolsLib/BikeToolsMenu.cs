@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.Text;
 
@@ -37,7 +38,14 @@ namespace BikeToolsLib
                             break;
 
                         case "0":
-                            Console.WriteLine("\nZamykanie...");
+                            Console.Write("\nZamykanie");
+
+                            for (int i = 0; i < 3; i++)
+                            {
+                                Thread.Sleep(700);
+                                Console.Write(".");
+                            }
+
                             System.Environment.Exit(1);
                             break;
                     }

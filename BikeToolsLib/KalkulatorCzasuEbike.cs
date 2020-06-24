@@ -46,7 +46,7 @@ namespace BikeToolsLib
                         break;
 
                     case "3":
-                        mode = "High";
+                        mode = "high";
                         o = 1.0;
                         break;
 
@@ -54,16 +54,13 @@ namespace BikeToolsLib
             }
 
             double j;
-
             j = (((x * z) / k) * 60) * o;
 
             Progress.ProgressBar();
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut\n");
+            Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut");
             Console.ResetColor();
-
-
             BikeToolsMenu.Menu();
 
         }
