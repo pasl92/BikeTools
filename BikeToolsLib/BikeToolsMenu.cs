@@ -50,6 +50,9 @@ namespace BikeToolsLib
                             break;
                     }
                 }
+
+                Console.Beep(670, 400);
+
             }
         }
     }

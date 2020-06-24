@@ -17,16 +17,43 @@ namespace BikeToolsLib
             Console.WriteLine("\nAby oszacować czas jazdy na Ebike wprowadz dane:\n - liczba aperogodzin (Ah)\n - Napięcie (V) \n - moc silnika (W) \n");
 
             Console.WriteLine("Wprowadz liczbę amperogodzin");
-            double x = double.Parse(Console.ReadLine());
+
+            if(double.TryParse(Console.ReadLine(), out double x))
+            {
+                Sounds.SuccessSound();
+            }
+            else
+            {
+                Sounds.FailSound();
+                KalDysEbike();
+            }
+
 
             Console.WriteLine("Wprowadz napięcie");
-            double z = double.Parse(Console.ReadLine());
+            if (double.TryParse(Console.ReadLine(), out double z))
+            {
+                Sounds.SuccessSound();
+            }
+            else
+            {
+                Sounds.FailSound();
+                KalDysEbike();
+            }
 
             Console.WriteLine("Wprowadz moc silnika");
-            double k = double.Parse(Console.ReadLine());
+            if (double.TryParse(Console.ReadLine(), out double k))
+            {
+                Sounds.SuccessSound();
+            }
+            else
+            {
+                Sounds.FailSound();
+                KalDysEbike();
+            }
+
+
 
             Console.WriteLine("\nWybierz stopień wspomagania: \n 1 - Low\n 2 - Medium\n 3 - High\n");
-
 
             string h = Console.ReadLine();
 
@@ -49,15 +76,21 @@ namespace BikeToolsLib
                         mode = "high";
                         o = 1.0;
                         break;
-
                 }
             }
+            else
+            {
+                Sounds.FailSound();
+                KalDysEbike();
+            }
+
 
             double j;
             j = (((x * z) / k) * 60) * o;
 
-            Progress.ProgressBar();
 
+            Progress.ProgressBar();
+            Sounds.SuccessSound();
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut");
             Console.ResetColor();
