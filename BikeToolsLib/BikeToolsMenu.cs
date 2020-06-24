@@ -9,7 +9,7 @@ namespace BikeToolsLib
         public static void Menu()
         {
             Console.WriteLine("1. Kalkulator rozmiaru ramy");
-            Console.WriteLine("2. Kalkulator długosci szprych");
+            Console.WriteLine("2. Kalkulator czasu jazdy Ebike");
             Console.WriteLine("3. INFO");
             Console.WriteLine("\n0. KONIEC");
 
@@ -29,7 +29,7 @@ namespace BikeToolsLib
                             break;
 
                         case "2":
-                            KalkulatorSzprych.KalSzprych();
+                            KalkulatorCzasuEbike.KalDysEbike();
                             break;
 
                         case "3":
