@@ -39,6 +39,7 @@ namespace BikeToolsLib
                         {
                             if (wzrost <= j)
                             {
+                                Sounds.SuccessSound();
                                 Console.WriteLine("\nOdpowiedni rozmiar ramy MTB to " + frameSizeM[n]);
                                 Console.ResetColor();
                                 n = 10;
@@ -53,6 +54,7 @@ namespace BikeToolsLib
 
                     else
                     {
+                        Sounds.FailSound();
                         Console.WriteLine("\nAby dobrać odpowiedni rozmiar dla twojego wzrostu, polecamy udać się na konsultacje w sklepie rowerowym.");
                         Console.ResetColor();
                     }
@@ -74,6 +76,7 @@ namespace BikeToolsLib
                         {
                             if (wzrost <= j)
                             {
+                                Sounds.SuccessSound();
                                 Console.WriteLine("\nOdpowiedni rozmiar ramy szosowej to " + frameSizeR[n]);
                                 Console.ResetColor();
                                 n = 10;
@@ -88,6 +91,7 @@ namespace BikeToolsLib
 
                     else
                     {
+                        Sounds.FailSound();
                         Console.WriteLine("\nAby dobrać odpowiedni rozmiar dla twojego wzrostu, polecamy udać się na konsultacje w sklepie rowerowym.");
                         Console.ResetColor();
                     }
@@ -99,6 +103,7 @@ namespace BikeToolsLib
                 else if (b == "3")
 
                 {
+                    Sounds.SuccessSound();
                     Console.ResetColor();
                     BikeToolsMenu.Menu();
                     

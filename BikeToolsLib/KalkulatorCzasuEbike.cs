@@ -57,31 +57,30 @@ namespace BikeToolsLib
 
             string h = Console.ReadLine();
 
-            if ((h == "1") || (h == "2") || (h == "3"))
-            {
-
-                switch (h)
-                {
-                    case "1":
-                        mode = "low";
-                        o = 1.75;
-                        break;
-
-                    case "2":
-                        mode = "medium";
-                        o = 1.50;
-                        break;
-
-                    case "3":
-                        mode = "high";
-                        o = 1.0;
-                        break;
-                }
-            }
-            else
+            while ((h != "1") && (h != "2") && (h != "3"))
             {
                 Sounds.FailSound();
-                KalDysEbike();
+                h = Console.ReadLine();
+            }
+
+            Sounds.SuccessSound();
+
+            switch (h)
+            {
+                case "1":
+                    mode = "low";
+                    o = 1.75;
+                    break;
+
+                case "2":
+                    mode = "medium";
+                    o = 1.50;
+                    break;
+
+                case "3":
+                    mode = "high";
+                    o = 1.0;
+                    break;
             }
 
 

@@ -14,46 +14,44 @@ namespace BikeToolsLib
             Console.WriteLine("3. INFO");
             Console.WriteLine("\n0. KONIEC\n");
 
+            string h = "";
 
-            while (1 != 0)
+            while ((h != "0") && (h != "1") && (h != "2") && (h != "3"))
             {
-                string h = Console.ReadLine();
-
-                if ((h == "0") || (h == "1") || (h == "2") || (h == "3"))
-                {
-
-                    switch (h)
-                    {
-                        case "1":
-                            KalkulkatorRam.KalRam();
-
-                            break;
-
-                        case "2":
-                            KalkulatorCzasuEbike.KalDysEbike();
-                            break;
-
-                        case "3":
-                            BikeToolsInfo.Info();
-                            break;
-
-                        case "0":
-                            Console.Write("\nZamykanie");
-
-                            for (int i = 0; i < 3; i++)
-                            {
-                                Thread.Sleep(700);
-                                Console.Write(".");
-                            }
-
-                            System.Environment.Exit(1);
-                            break;
-                    }
-                }
-
-                Console.Beep(670, 400);
-
+                h = Console.ReadLine();
             }
+
+
+            switch (h)
+            {
+                case "1":
+                    KalkulkatorRam.KalRam();
+
+                    break;
+
+                case "2":
+                    KalkulatorCzasuEbike.KalDysEbike();
+                    break;
+
+                case "3":
+                    BikeToolsInfo.Info();
+                    break;
+
+                case "0":
+                    Console.Write("\nZamykanie");
+
+                    for (int i = 0; i < 3; i++)
+                    {
+                        Thread.Sleep(700);
+                        Console.Write(".");
+                    }
+
+                    System.Environment.Exit(1);
+                    break;
+            }
+
+
+
         }
     }
 }
