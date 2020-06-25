@@ -7,7 +7,7 @@ namespace BikeToolsLib
 {
     public class Logo
     {
-        static public void AppLogo()
+        static public void AppLogo(int k)
         {
             string[] logo = new string[] {
             "++++++++++  +++  +++  +++  ++++++++++      ++++++++++  ++++++++++   ++++++++++   +++       ++++++++++",
@@ -20,15 +20,24 @@ namespace BikeToolsLib
             };
 
 
-            int t = 700;
-            for (int i = 0; i < logo.Length; i++)
+            if (k == 1)
             {
-                Thread.Sleep(t);
-                t = t - 100;
-                Console.WriteLine(logo[i]);
+                int t = 700;
+                for (int i = 0; i < logo.Length; i++)
+                {
+                    Thread.Sleep(t);
+                    t = t - 100;
+                    Console.WriteLine(logo[i]);
+                    Console.Beep(300, 30);
+                }
             }
-
-            Console.ResetColor();
+            else if(k == 0)
+            {
+                for (int i = 0; i < logo.Length; i++)
+                {
+                    Console.WriteLine(logo[i]);
+                }
+            }
         }
     }
 }
