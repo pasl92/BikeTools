@@ -11,7 +11,8 @@ namespace BikeToolsLib
         {
             Console.WriteLine("\n1. Kalkulator rozmiaru ramy");
             Console.WriteLine("2. Kalkulator czasu jazdy Ebike");
-            Console.WriteLine("3. INFO");
+            Console.WriteLine("3. Prezent urodzinowy");
+            Console.WriteLine("4. INFO");
             Console.WriteLine("\n0. KONIEC\n");
 
             string h = "";
@@ -34,6 +35,10 @@ namespace BikeToolsLib
                     break;
 
                 case "3":
+                    Sounds.SupriseSound();
+                    break;
+
+                case "4":
                     BikeToolsInfo.Info();
                     break;
 
