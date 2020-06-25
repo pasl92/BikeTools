@@ -20,7 +20,7 @@ namespace BikeToolsLib
 
             if(double.TryParse(Console.ReadLine(), out double x))
             {
-                Sounds.SuccessSound();
+                Sounds.EnterSound();
             }
             else
             {
@@ -32,7 +32,7 @@ namespace BikeToolsLib
             Console.WriteLine("Wprowadz napięcie");
             if (double.TryParse(Console.ReadLine(), out double z))
             {
-                Sounds.SuccessSound();
+                Sounds.EnterSound();
             }
             else
             {
@@ -43,7 +43,7 @@ namespace BikeToolsLib
             Console.WriteLine("Wprowadz moc silnika");
             if (double.TryParse(Console.ReadLine(), out double k))
             {
-                Sounds.SuccessSound();
+                Sounds.EnterSound();
             }
             else
             {
@@ -63,7 +63,7 @@ namespace BikeToolsLib
                 h = Console.ReadLine();
             }
 
-            Sounds.SuccessSound();
+            Sounds.EnterSound();
 
             switch (h)
             {

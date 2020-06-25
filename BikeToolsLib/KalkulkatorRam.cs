@@ -14,6 +14,7 @@ namespace BikeToolsLib
 
             Console.WriteLine("\nPodaj wzrost: ");
             wzrost = int.Parse(Console.ReadLine());
+            Sounds.EnterSound();
 
             Console.WriteLine("\nWybierz rodzaj roweru: \n");
             Console.WriteLine("1 - Rower MTB");
@@ -59,9 +60,6 @@ namespace BikeToolsLib
                         Console.ResetColor();
                     }
 
-                    Console.WriteLine("\n0 - KONIEC");
-                    Console.WriteLine("3 - Menu główne\n");
-
                 }
 
                 else if (b == "2")
@@ -96,20 +94,10 @@ namespace BikeToolsLib
                         Console.ResetColor();
                     }
 
-                    Console.WriteLine("\n0 - KONIEC");
-                    Console.WriteLine("3 - Menu główne\n");
                 }
 
-                else if (b == "3")
-
-                {
-                    Sounds.SuccessSound();
-                    Console.ResetColor();
-                    BikeToolsMenu.Menu();
-                    
-                }
-
-
+                Console.ResetColor();
+                BikeToolsMenu.Menu();
             }
         }
 

@@ -17,11 +17,12 @@ namespace BikeToolsLib
 
             string h = "";
 
-            while ((h != "0") && (h != "1") && (h != "2") && (h != "3"))
+            while ((h != "0") && (h != "1") && (h != "2") && (h != "3") && (h != "4"))
             {
                 h = Console.ReadLine();
             }
 
+            Sounds.EnterSound();
 
             switch (h)
             {
@@ -36,6 +37,7 @@ namespace BikeToolsLib
 
                 case "3":
                     Sounds.SupriseSound();
+                    BikeToolsMenu.Menu();
                     break;
 
                 case "4":
@@ -54,9 +56,6 @@ namespace BikeToolsLib
                     System.Environment.Exit(1);
                     break;
             }
-
-
-
         }
     }
 }

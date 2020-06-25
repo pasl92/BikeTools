@@ -9,6 +9,7 @@ namespace BikeToolsLib
     {
         public static void ProgressBar()
         {
+            Console.WriteLine("");
             for (int i = 0; i <= 100; i++)
             {
                 Console.Write($"\rObliczanie... {i}%   ");

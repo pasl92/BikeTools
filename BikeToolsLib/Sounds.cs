@@ -12,8 +12,14 @@ namespace BikeToolsLib
             Console.Beep(670, 600);
         }
 
+        public static void EnterSound()
+        {
+            Console.Beep(450, 100);
+        }
+
         public static void SuccessSound()
         {
+            Console.Beep(650, 350);
             Console.Beep(650, 100);
         }
 
@@ -32,7 +38,11 @@ namespace BikeToolsLib
 
         public static void SupriseSound()
         {
-            Thread.Sleep(2000);
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("\nTurn on speakers \\m/");
+            Console.ResetColor();
+
+            Thread.Sleep(500);
             Console.Beep(264, 125);
             Thread.Sleep(250);
             Console.Beep(264, 125);
