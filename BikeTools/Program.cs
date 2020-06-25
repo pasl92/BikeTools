@@ -14,21 +14,9 @@ namespace BikeTools
             Console.WriteLine("WSEI 2019/2020\n");
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Thread.Sleep(700);
-            Console.WriteLine("++++++++++  +++  +++  +++  ++++++++++      ++++++++++  ++++++++++   ++++++++++   +++       ++++++++++");
-            Thread.Sleep(400);
-            Console.WriteLine("++      ++  +++  +++ +++   ++                  ++      ++      ++   ++      ++   +++       ++        ");
-            Thread.Sleep(350);
-            Console.WriteLine("++      ++  +++  ++++++    ++                  ++      ++      ++   ++      ++   +++       ++        ");
-            Thread.Sleep(300);
-            Console.WriteLine("++++++++++  +++  ++++      ++++++++++          ++      ++      ++   ++      ++   +++       ++++++++++");
-            Thread.Sleep(250);
-            Console.WriteLine( "++      ++  +++  ++++++    ++                  ++      ++      ++   ++      ++   +++               ++" );
-            Thread.Sleep(200);
-            Console.WriteLine("++      ++  +++  +++ +++   ++                  ++      ++      ++   ++      ++   +++               ++");
-            Thread.Sleep(100);
-            Console.WriteLine( "++++++++++  +++  +++  +++  ++++++++++          ++      ++++++++++   ++++++++++   +++++++   ++++++++++\n");
-            Console.ResetColor();
+            Logo.AppLogo();
+            CursorPosition.WelcomeWindow(0, 2);
+            Logo.AppLogo();
 
             Console.Beep(670, 125);
             Console.Beep(659, 125);
