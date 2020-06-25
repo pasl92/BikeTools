@@ -17,17 +17,7 @@ namespace BikeTools
             Logo.AppLogo();
             CursorPosition.WelcomeWindow(0, 2);
             Logo.AppLogo();
-
-            Console.Beep(670, 125);
-            Console.Beep(659, 125);
-            Thread.Sleep(125);
-            Console.Beep(659, 125);
-            Thread.Sleep(167);
-            Console.Beep(523, 125);
-            Console.Beep(659, 125);
-            Thread.Sleep(125);
-            Console.Beep(784, 125);
-
+            Sounds.WelcomeSound();
 
             BikeToolsMenu.Menu();
 
