@@ -8,8 +8,11 @@ namespace BikeTools
     public class Program
     {
 
+
         static void Main(string[] args)
         {
+
+            Console.BufferWidth = 120;
 
             Console.WriteLine("WSEI 2019/2020\n");
 
