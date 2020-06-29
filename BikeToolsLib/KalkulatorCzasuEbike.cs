@@ -53,7 +53,7 @@ namespace BikeToolsLib
 
 
 
-            Console.WriteLine("\nWybierz stopień wspomagania: \n 1 - Low\n 2 - Medium\n 3 - High\n");
+            Console.WriteLine("\nWybierz stopień wspomagania: \n 1. Low\n 2. Medium\n 3. High\n");
 
             string h = Console.ReadLine();
 

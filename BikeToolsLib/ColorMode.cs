@@ -10,33 +10,39 @@ namespace BikeToolsLib
     {
         public static void ColorMenu()
         {
-            Console.WriteLine("1 - Dark Mode");
-            Console.WriteLine("2 - White Mode");
-            Console.WriteLine("3 - Random Mode");
-            Console.WriteLine("0 - Menu");
+            Console.WriteLine("\n1. Dark Mode");
+            Console.WriteLine("2. White Mode");
+            Console.WriteLine("3. Random Mode");
+            Console.WriteLine("0. Menu\n");
 
-            string h = "";
+
+            string h = Console.ReadLine();
 
             while ((h != "0") && (h != "1") && (h != "2") && (h != "3"))
             {
+                Sounds.FailSound();
                 h = Console.ReadLine();
             }
 
             switch (h)
             {
                 case "1":
+                    Sounds.EnterSound();
                     DarkMode();
                     break;
 
                 case "2":
+                    Sounds.EnterSound();
                     WhiteMode();
                     break;
 
                 case "3":
+                    Sounds.EnterSound();
                     RandomMode();
                     break;
 
                 case "0":
+                    Sounds.EnterSound();
                     BikeToolsMenu.Menu();
                     break;
             }
@@ -64,11 +70,11 @@ namespace BikeToolsLib
 
         public static void RandomMode()
         {
-            Random r = new Random();
+            Random x = new Random();
 
             Console.Clear();
-            Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
-            Console.BackgroundColor = (ConsoleColor)r.Next(0, 16);
+            Console.ForegroundColor = (ConsoleColor)x.Next(0, 16);
+            Console.BackgroundColor = (ConsoleColor)x.Next(0, 16);
             Console.Clear();
             Logo.AppLogo(1);
             BikeToolsMenu.Menu();
