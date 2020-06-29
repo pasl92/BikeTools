@@ -73,8 +73,8 @@ namespace BikeToolsLib
             Random x = new Random();
 
             Console.Clear();
-            Console.ForegroundColor = (ConsoleColor)x.Next(0, 16);
-            Console.BackgroundColor = (ConsoleColor)x.Next(0, 16);
+            Console.ForegroundColor = (ConsoleColor)x.Next(0, 7);
+            Console.BackgroundColor = (ConsoleColor)x.Next(8, 16);
             Console.Clear();
             Logo.AppLogo(1);
             BikeToolsMenu.Menu();
