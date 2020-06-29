@@ -90,9 +90,7 @@ namespace BikeToolsLib
 
             Progress.ProgressBar();
             Sounds.SuccessSound();
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut");
-            Console.ResetColor();
+            Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut"); 
             BikeToolsMenu.Menu();
 
         }

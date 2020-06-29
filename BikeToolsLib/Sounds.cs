@@ -38,9 +38,7 @@ namespace BikeToolsLib
 
         public static void SupriseSound()
         {
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\nTurn on speakers \\m/");
-            Console.ResetColor();
 
             Thread.Sleep(500);
             Console.Beep(264, 125);
