@@ -14,9 +14,13 @@ namespace BikeToolsLib
             Console.WriteLine("\nPodaj wagę: ");
             if (double.TryParse(Console.ReadLine(), out double w))
             {
+                Sounds.EnterSound();
+
                 Console.WriteLine("\nPodaj wzrost ");
                 if (double.TryParse(Console.ReadLine(), out double h))
                 {
+                    Sounds.EnterSound();
+                    Progress.ProgressBar();
                     BMIlogic(w, h, out double u);
                     Console.WriteLine("\nTwoje BMI to: " + string.Format("{0:.0}", u));
 
@@ -36,22 +40,24 @@ namespace BikeToolsLib
                     {
                         Console.WriteLine("Waga za wysoka");
                     }
-                    else if (u < 35)
+                    else if (u > 30)
                     {
                         Console.WriteLine("Waga zdecydowanie za wysoka");
                     }
-
+                    Sounds.SuccessSound();
                     Console.WriteLine();
 
                 }
                 else
                 {
+                    Sounds.FailSound();
                     BMI();
                 }
 
             }
             else
             {
+                Sounds.FailSound();
                 BMI();
             }
 
