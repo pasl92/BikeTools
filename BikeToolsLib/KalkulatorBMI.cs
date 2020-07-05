@@ -21,7 +21,7 @@ namespace BikeToolsLib
                 if (double.TryParse(Console.ReadLine(), out double height))
                 {
                     Sounds.EnterSound();
-                    Progress.ProgressBar();
+                    Loaders.ProgressBar();
                     BMIlogic(weight, height, out double result);
                     Console.WriteLine("\nTwoje BMI to: " + string.Format("{0:.0}", result));
 

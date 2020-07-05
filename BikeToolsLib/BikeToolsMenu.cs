@@ -42,7 +42,7 @@ namespace BikeToolsLib
                     KalkulatorBMI.BMI();
                     break;
 
-                case "4":
+                case "4":4
                     Sounds.SupriseSound();
                     BikeToolsMenu.Menu();
                     break;
@@ -56,14 +56,7 @@ namespace BikeToolsLib
                     break;
 
                 case "0":
-                    Console.Write("\nZamykanie");
-
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Thread.Sleep(700);
-                        Console.Write(".");
-                    }
-
+                    Loaders.ClosingLoader();
                     System.Environment.Exit(1);
                     break;
             }

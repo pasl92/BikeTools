@@ -91,7 +91,7 @@ namespace BikeToolsLib
             time = (((ah * v) / w) * 60) * level;
 
 
-            Progress.ProgressBar();
+            Loaders.ProgressBar();
             Sounds.SuccessSound();
             Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", time) + " minut"); 
             BikeToolsMenu.Menu();
