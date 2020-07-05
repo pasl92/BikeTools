@@ -7,6 +7,7 @@ namespace BikeToolsLib
 {
     class Progress
     {
+        //Loader procentowy
         public static void ProgressBar()
         {
             Console.WriteLine("");

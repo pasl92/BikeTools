@@ -7,6 +7,7 @@ namespace BikeToolsLib
 {
     public class Logo
     {
+        //Logo projektu wraz z animacja
         static public void AppLogo(int k)
         {
             string[] logo = new string[] {
@@ -40,6 +41,7 @@ namespace BikeToolsLib
             }
         }
 
+        //Animacja kolorystyczna logo
         public static void LogoAnim()
         {
 

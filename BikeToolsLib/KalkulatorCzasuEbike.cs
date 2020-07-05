@@ -8,17 +8,20 @@ namespace BikeToolsLib
 {
     public class KalkulatorCzasuEbike
     {
+
+        //Pobranie danych dla kalkulatora czasu jazdy na rowerze elektrycznym
+        //obliczenie czasu uwzględniająć poziom doładowania
         public static void KalDysEbike()
         {
 
-            double o = 1.0;
+            double level = 1.0;
             string mode = "high";
 
             Console.WriteLine("\nAby oszacować czas jazdy na Ebike wprowadz dane:\n - liczba aperogodzin (Ah)\n - Napięcie (V) \n - moc silnika (W) \n");
 
             Console.WriteLine("Wprowadz liczbę amperogodzin");
 
-            if(double.TryParse(Console.ReadLine(), out double x))
+            if(double.TryParse(Console.ReadLine(), out double ah))
             {
                 Sounds.EnterSound();
             }
@@ -30,7 +33,7 @@ namespace BikeToolsLib
 
 
             Console.WriteLine("Wprowadz napięcie");
-            if (double.TryParse(Console.ReadLine(), out double z))
+            if (double.TryParse(Console.ReadLine(), out double v))
             {
                 Sounds.EnterSound();
             }
@@ -41,7 +44,7 @@ namespace BikeToolsLib
             }
 
             Console.WriteLine("Wprowadz moc silnika");
-            if (double.TryParse(Console.ReadLine(), out double k))
+            if (double.TryParse(Console.ReadLine(), out double w))
             {
                 Sounds.EnterSound();
             }
@@ -69,28 +72,28 @@ namespace BikeToolsLib
             {
                 case "1":
                     mode = "low";
-                    o = 1.75;
+                    level = 1.75;
                     break;
 
                 case "2":
                     mode = "medium";
-                    o = 1.50;
+                    level = 1.50;
                     break;
 
                 case "3":
                     mode = "high";
-                    o = 1.0;
+                    level = 1.0;
                     break;
             }
 
 
-            double j;
-            j = (((x * z) / k) * 60) * o;
+            double time;
+            time = (((ah * v) / w) * 60) * level;
 
 
             Progress.ProgressBar();
             Sounds.SuccessSound();
-            Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", j) + " minut"); 
+            Console.WriteLine("\n\nSzacunkowy czas jazdy w trybie doładowania " + mode + " to " + string.Format("{0:.0}", time) + " minut"); 
             BikeToolsMenu.Menu();
 
         }

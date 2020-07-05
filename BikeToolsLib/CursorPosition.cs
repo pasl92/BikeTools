@@ -6,6 +6,7 @@ namespace BikeToolsLib
 {
     public class CursorPosition
     {
+        //Resetowanie pozycji kursora
         public static void WelcomeWindow(int x, int y)
 
         {

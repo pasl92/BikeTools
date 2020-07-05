@@ -7,7 +7,6 @@ namespace BikeTools
 {
     public class Program
     {
-
         static public void Main(string[] args)
         {
             Console.BufferWidth = 120;

@@ -7,6 +7,7 @@ namespace BikeToolsLib
 {
     public class BikeToolsMenu
     {
+        //Menu główne programu
         public static void Menu()
         {
             Console.WriteLine("\n1. Kalkulator rozmiaru ramy");

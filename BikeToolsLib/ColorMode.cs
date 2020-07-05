@@ -8,6 +8,7 @@ namespace BikeToolsLib
     public class ColorMode
 
     {
+        //Obsługa zmiany koloru interfejsu
         public static void ColorMenu()
         {
             Console.WriteLine("\n1. Dark Mode");
@@ -49,7 +50,7 @@ namespace BikeToolsLib
 
         }
 
-
+        //Zmiana koloru interfajsu na bialy
         public static void WhiteMode()
         {
             Console.Clear();
@@ -60,6 +61,7 @@ namespace BikeToolsLib
             BikeToolsMenu.Menu();
         }
 
+        //Zmiana koloru interfejsu na czarny
         public static void DarkMode()
         {
             Console.ResetColor();
@@ -68,13 +70,14 @@ namespace BikeToolsLib
             BikeToolsMenu.Menu();
         }
 
+        //Zmina koloru interfesju na losowy kolor
         public static void RandomMode()
         {
-            Random x = new Random();
+            Random color = new Random();
 
             Console.Clear();
-            Console.ForegroundColor = (ConsoleColor)x.Next(0, 7);
-            Console.BackgroundColor = (ConsoleColor)x.Next(8, 16);
+            Console.ForegroundColor = (ConsoleColor)color.Next(0, 7);
+            Console.BackgroundColor = (ConsoleColor)color.Next(8, 16);
             Console.Clear();
             Logo.AppLogo(1);
             BikeToolsMenu.Menu();
