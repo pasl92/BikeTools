@@ -1,9 +1,0 @@
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\bin\Debug\netstandard2.0\BikeToolsLib.deps.json
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\bin\Debug\netstandard2.0\BikeToolsLib.dll
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\bin\Debug\netstandard2.0\BikeToolsLib.pdb
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\obj\Debug\netstandard2.0\BikeToolsLib.csprojAssemblyReference.cache
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\obj\Debug\netstandard2.0\BikeToolsLib.csproj.CoreCompileInputs.cache
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\obj\Debug\netstandard2.0\BikeToolsLib.AssemblyInfoInputs.cache
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\obj\Debug\netstandard2.0\BikeToolsLib.AssemblyInfo.cs
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\obj\Debug\netstandard2.0\BikeToolsLib.dll
-C:\Users\PC\source\repos\BikeTools\BikeToolsLib\obj\Debug\netstandard2.0\BikeToolsLib.pdb

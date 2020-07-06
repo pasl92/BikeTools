@@ -12,12 +12,12 @@ namespace BikeToolsLib
         //Wyświetlenie BMI wraz z komentarzem
         public static void BMI()
         {
-            Console.WriteLine("\nPodaj wagę: ");
+            Console.WriteLine("\nPodaj wagę w kilogramach: ");
             if (double.TryParse(Console.ReadLine(), out double weight))
             {
                 Sounds.EnterSound();
 
-                Console.WriteLine("\nPodaj wzrost ");
+                Console.WriteLine("\nPodaj wzrost w centymetrach: ");
                 if (double.TryParse(Console.ReadLine(), out double height))
                 {
                     Sounds.EnterSound();

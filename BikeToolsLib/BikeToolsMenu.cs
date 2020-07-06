@@ -7,7 +7,7 @@ namespace BikeToolsLib
 {
     public class BikeToolsMenu
     {
-        //Menu główne programu
+        //Menu główne programu obsługiwane za pomoca switcha
         public static void Menu()
         {
             Console.WriteLine("\n1. Kalkulator rozmiaru ramy");
@@ -42,7 +42,7 @@ namespace BikeToolsLib
                     KalkulatorBMI.BMI();
                     break;
 
-                case "4":4
+                case "4":
                     Sounds.SupriseSound();
                     BikeToolsMenu.Menu();
                     break;
